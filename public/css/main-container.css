@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content > div {
+    box-shadow: 3px 3px 10px 5px #eee;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.recent-upload-container {
+    width: 66.64%;
+    height: 600px;
+}
+
+.live-ranking-container {
+    width: 33.32%;
+    height: 600px;
+}
+
+.like-artists-container {
+    width: 100%;
+    height: 400px;
+}
+
+.category-recommend-container {
+    width: 100%;
+    height: 600px;
+}

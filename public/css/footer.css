@@ -1,0 +1,44 @@
+footer {
+    width: 100%;
+    height: 500px;
+    padding: 20px 0px;
+}
+
+.menu-bar {
+    width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 50px;
+    display: flex;
+}
+
+.menu-bar-left a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bar-left {
+    margin-right: auto;
+}
+
+.menu-bar-right a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.info-box {
+    display: flex;
+    height: 400px;
+}
+
+.info-box-left {
+    width: 24.99%;
+    height: 100%;
+}
+
+.info-box-right {
+    width: 74.99%;
+    height: 100%;
+}

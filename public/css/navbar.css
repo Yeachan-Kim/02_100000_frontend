@@ -1,0 +1,20 @@
+.navbar {
+    background: #8785A2;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#sign-in-btn,
+#sign-up-btn {
+    color: white;
+    margin-right: 10px;
+}
+
+#project-btn {
+    border: none;
+    border-radius: 10px;
+    background: #FFE2E2;
+    padding: 10px 20px;
+}
