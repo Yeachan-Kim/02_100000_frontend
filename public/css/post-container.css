@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.post-container {
+    min-height: 80vh;
+    height: auto;
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    border: solid 1px #eee;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #aaa;
+    padding: 20px;
+}
+
+.post-left-layout {
+    display: inline-block;
+    width: 66%;
+    height: 100%;
+}
+
+.post-right-layout {
+    display: inline-block;
+    width: 33%;
+    height: 100vh;
+}
+
+.post-img-container {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+}
+
+.post-description-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.post-info-container {
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.post-img-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 10px 5px #eee;
+    overflow: hidden;
+}
+
+.post-img-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-description-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#fund-btn {
+    width: 100%;
+    background: lightpink;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: filter 0.3s;
+}
+
+#fund-btn:hover {
+    filter: brightness(70%);
+}
+
+.profile-box {
+    margin-top: 20px;
+}
+
+.video-container {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
