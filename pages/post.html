@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="../public/css/navbar.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/post-container.css">
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLPz7oOletYJz9eduFYh7FThgurzb0aI4&callback=initMap&libraries=maps,marker&v=beta">
+    </script>
+    <script>
+        function initMap() {
+            console.log('Maps JavaScript API loaded.');
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -25,25 +33,48 @@
                 <div>
                     <iframe width="100%" height="460px" src="https://www.youtube.com/embed/mbTmPn42z80?si=AaQ_3VNDZOCT1hIu"
                             title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                             allowfullscreen></iframe>
                 </div>
             </div>
             <div class="post-description-container">
-                <div class="post-description-inner">
-
+                <div class="post-description-inner content-box">
+                    <div class="post-description-content">
+                        <h2>기가 막히는 오렌지 캬라멜</h2>
+                        <p>여러분의 동심을 지켜줄 오렌지 캬라멜 공연을 보러 오세요!!!</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="post-right-layout">
             <div class="post-info-container">
-                <div class="post-info-inner content-box">
-                    <span>#랩/힙합</span>
+                <div class="post-info-inner">
+                    <div class="tag-container">
+                        <span>#랩/힙합</span>
+                    </div>
                     <h2>Title</h2>
                     <p>description description description description description description description </p>
+                    <div class="fund-num-container">
+                        <span id="fund-num">50</span>명 참여
+                    </div>
+                    <div class="money-num-container">
+                        <span id="money-num">235,000</span>원 달성
+                    </div>
                     <button id="fund-btn">펀딩 갈기기</button>
                 </div>
+                <div class="map-box content-box">
+                    <gmp-map style="width: 100%; height: 200px" center="43.4142989,-124.2301242" zoom="8" map-id="DEMO">
+                        <gmp-advanced-marker position="43.4142989,-124.2301242" title="Mountain View, CA"></gmp-advanced-marker>
+                    </gmp-map>
+                </div>
                 <div class="profile-box content-box">
+                    <img id="profile-img" src="https://i.namu.wiki/i/xoo4E-3TVHiH0OrfBn050ymmdsbUPL4zZK2BrkRqRZSFI6yL5yPXrKcPHFxl7I5bswCnGYeMjEnm4cvGazXeuA.webp"
+                         alt="">
+                    <div class="profile-description">
+                        <h4>오렌지 캬라멜</h4>
+                        <span>999,999</span>명 팔로우 중
+                    </div>
+                    <button id="follow-btn">팔로우 +</button>
                 </div>
             </div>
         </div>
