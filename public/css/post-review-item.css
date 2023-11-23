@@ -1,0 +1,22 @@
+.review-item {
+    background: #eee;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.item-context {
+    margin-top: 20px;
+}
+
+.user-name {
+    margin-left: 5px;
+}

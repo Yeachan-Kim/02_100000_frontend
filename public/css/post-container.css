@@ -57,6 +57,11 @@ div {
     padding: 20px;
 }
 
+.review-container {
+    width: 100%;
+    padding: 20px;
+}
+
 .post-img-inner {
     width: 100%;
     height: 100%;
@@ -77,6 +82,10 @@ div {
     height: 100%;
 }
 
+.review-inner h3 {
+    text-align: center;
+}
+
 #fund-btn {
     width: 100%;
     background: lightpink;
@@ -95,6 +104,7 @@ div {
 .profile-box {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .video-container {
@@ -126,4 +136,57 @@ div {
 #follow-btn {
     margin-left: auto;
     height: 40px;
+}
+
+.profile-desc {
+    width: 100%;
+}
+
+.review-input-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#review-input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 0 10px 0 10px;
+    outline: none;
+}
+
+#review-submit-btn {
+    background: none;
+    border: none;
+}
+
+.money-rate-bar {
+    padding: 10px 0 10px 0;
+}
+
+.rate-outline {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#rate-percent {
+    background: skyblue;
+    width: 67%;
+    height: 100%;
+}
+
+#rate-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
