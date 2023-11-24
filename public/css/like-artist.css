@@ -1,0 +1,29 @@
+.like-artists-item-container {
+    display: flex;
+}
+
+.like-artists-item {
+    width: 20%;
+    padding: 20px;
+}
+
+.like-item-img {
+    width: 100%;
+    border-radius: 20px;
+}
+.like-item-img:hover {
+    cursor: pointer;
+}
+
+.like-item-name {
+    margin-top: 5px;
+}
+
+#i-like-artists {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

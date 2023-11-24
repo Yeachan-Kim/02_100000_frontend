@@ -1,0 +1,44 @@
+
+
+.rank-item-container {
+    margin-top: 20px;
+}
+
+.rank-item {
+    display: flex;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.rank-item-img {
+    width: 100px;
+    border-radius: 20px;
+}
+.rank-item-img:hover {
+    cursor: pointer;
+}
+
+.rank-num {
+    font-size: 32px;
+    margin-right: 16px;
+    width: 20px;
+    
+}
+.rank-item-description{
+    width: 100%;
+    margin-right: auto;
+}
+
+.rank-item-title {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.rank-item-category {
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
