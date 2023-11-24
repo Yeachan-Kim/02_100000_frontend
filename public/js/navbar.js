@@ -16,7 +16,6 @@ $("document").ready(function () {
                         Authorization: "Bearer " + getCookie("AccessToken")
                     },
                     success: function (res) {
-                        console.log(res);
                         navUserImg.attr("src", res.imgUrl);
                         navUserName.html(res.name);
                         singInBtn.css("display", "none");

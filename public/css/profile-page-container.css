@@ -22,6 +22,7 @@ div {
 .video-container {
   width: 800px;
   height: 440px;
+  display: none;
 }
 .following-container {
   width: 800px;
