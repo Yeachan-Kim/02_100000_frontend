@@ -1,3 +1,6 @@
 # IDE Setting, OS cloud Folders
 .idea
 .DS_Store
+
+# ENV
+public/js/config.js
