@@ -3,7 +3,7 @@ const accessTime = 2 * 60;
 const refreshTime = 24 * 60 * 7;
 
 if (!!loginCode) {
-    $.get(ServerURL + `/api/auth/login?code=${loginCode}`).then((res) => {
+    $.get(config.ServerURL + `/api/auth/login?code=${loginCode}`).then((res) => {
         setCookie('AccessToken', res.AccessToken, accessTime);
         setCookie('RefreshToken', res.RefreshToken, refreshTime);
         window.location.href = '/';
