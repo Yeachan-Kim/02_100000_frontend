@@ -17,7 +17,11 @@ div {
 }
 .profile-container {
   width: 800px;
-  height: 358px;
+  height: 400px;
+}
+.video-container {
+  width: 800px;
+  height: 440px;
 }
 .following-container {
   width: 800px;
@@ -26,13 +30,4 @@ div {
 .comment-container {
   width: 800px;
   height: 720px;
-}
-.profile-content-inner {
-  border: solid 1px #eee;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -5px #ccc;
-  width: 100%;
-  height: 100%;
-  background: #f6f6f6;
-  display: flex;
 }
