@@ -26,6 +26,8 @@ if (!!postId) {
 
             artistName.html(res.artist.artistName);
             artistDesc.html(res.artist.intro);
+
+
         },
         error: function (err) {
             console.error(err);

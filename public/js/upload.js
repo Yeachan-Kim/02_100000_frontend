@@ -10,7 +10,7 @@ submitBtn.click(function (e) {
     const content = $(".text-input-box").html();
     const category = $("input[name = category]:checked").val();
     const date = $("#concert-date").val();
-    const date1 = new Date(date);
+    const date1 = new Date(date).toISOString();
     const files = addArr;
     const youtube = $("#video-url").val();
 
@@ -48,20 +48,20 @@ submitBtn.click(function (e) {
 
         console.log(data);
 
-        // $.ajax({
-        //     url: config.ServerURL + "/api/concert",
-        //     type: "POST",
-        //     body: JSON.stringify(data),
-        //     headers: {
-        //         Authorization: "Bearer " + getCookie("AccessToken")
-        //     },
-        //     success: function (res) {
-        //         console.log(res);
-        //     },
-        //     error: function (err) {
-        //         console.error(err);
-        //     }
-        // })
+        $.ajax({
+            url: config.ServerURL + "/api/concert",
+            type: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                Authorization: "Bearer " + getCookie("AccessToken")
+            },
+            success: function (res) {
+                console.log(res);
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        })
     }
 })
 
