@@ -51,7 +51,7 @@ submitBtn.click(function (e) {
         $.ajax({
             url: config.ServerURL + "/api/concert",
             type: "POST",
-            body: JSON.stringify(concertPostReq),
+            data: JSON.stringify(concertPostReq),
             headers: {
                 Authorization: "Bearer " + getCookie("AccessToken")
             },
