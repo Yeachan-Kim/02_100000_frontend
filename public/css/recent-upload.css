@@ -16,7 +16,14 @@
     height: 160px;
     object-fit: cover;
 }
-
+.recent-item-img:hover {
+    cursor: pointer;
+}
 .recent-item-title {
     margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
