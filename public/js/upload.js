@@ -31,7 +31,7 @@ submitBtn.click(function (e) {
         category: ${category}, date: ${date1}`);
         console.log(content);
 
-        let data = {
+        let concertPostReq = {
             "concertDate": date1,
             "region": "INCHEON",
             "fundingDate": date1,
@@ -46,12 +46,12 @@ submitBtn.click(function (e) {
             "url": youtube
         }
 
-        console.log(data);
+        console.log(concertPostReq);
 
         $.ajax({
             url: config.ServerURL + "/api/concert",
             type: "POST",
-            body: JSON.stringify(data),
+            body: JSON.stringify(concertPostReq),
             headers: {
                 Authorization: "Bearer " + getCookie("AccessToken")
             },
