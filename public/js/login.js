@@ -4,8 +4,8 @@ const refreshTime = 24 * 60 * 7;
 
 if (!!loginCode) {
     $.get(config.ServerURL + `/api/auth/login?code=${loginCode}`).then((res) => {
-        setCookie('AccessToken', res.AccessToken, accessTime);
-        setCookie('RefreshToken', res.RefreshToken, refreshTime);
+        setCookie('AccessToken', res.accessToken, accessTime);
+        setCookie('RefreshToken', res.refreshToken, refreshTime);
         window.location.href = '/';
     }).catch(() => {
         alert("관리자에게 문의하세요.")
