@@ -17,7 +17,11 @@ div {
 }
 .profile-container {
   width: 800px;
-  height: 358px;
+  height: 400px;
+}
+.video-container {
+  width: 800px;
+  height: 440px;
 }
 .following-container {
   width: 800px;
