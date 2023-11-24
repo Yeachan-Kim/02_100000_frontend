@@ -6,6 +6,19 @@ DUMMY = {
   "src" : "https://image.bugsm.co.kr/album/images/500/3095/309515.jpg",
 }
 
+// $.ajax({
+//   type: "GET",
+//   url: config.ServerURL + "/api/concert/funding",
+//   success: function (res) {
+//       console.log(res);
+//   },
+//   error: function (err) {
+//       alert("가장 펀딩 높은 5개를 못가져옵니다.");
+//       console.error(err);
+//   }
+// })
+
+
 for(let i = 1; i < 5; i++){
   const liveRankingItem = `<div class="rank-item">
   <span class="rank-num">${i}</span>

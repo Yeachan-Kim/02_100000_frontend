@@ -14,6 +14,22 @@ if(getCookie("RefreshToken")){
         peopleLikeArtists.css("display", "none");
 
         //내가 팔로우한 아티스트 정보 가져오기
+        
+        $.ajax({
+            type: "GET",
+            url: config.ServerURL + "/api/choice/userId",
+            headers: {
+              Authorization: "Bearer " + getCookie("RefreshToken")
+            },
+            success: function (res) {
+                console.log("내가 팔로우한 아티스트 정보 가져오기")
+                console.log(res);
+            },
+            error: function (err) {
+                alert("내가 팔로우한 아티스트 정보를 가져올 수 없습니다.");
+                console.error(err);
+            }
+        })
         DUMMY = {
           "name" : "test",
           "src" : "https://image.bugsm.co.kr/album/images/500/3095/309515.jpg",
