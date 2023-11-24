@@ -15,3 +15,7 @@
 .like-item-name {
     margin-top: 5px;
 }
+
+#i-like-artists {
+    display: none;
+}
