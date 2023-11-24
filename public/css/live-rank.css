@@ -1,0 +1,27 @@
+.rank-item-container {
+    margin-top: 20px;
+}
+
+.rank-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.rank-item-img {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.rank-num {
+    font-size: 32px;
+    margin-right: 16px;
+}
+
+.rank-item-title {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.rank-item-category {
+    color: grey;
+}
