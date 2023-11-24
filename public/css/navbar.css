@@ -10,10 +10,10 @@ body {
     color: white;
 }
 
-#sign-in-btn,
-#sign-up-btn {
+#sign-in-btn {
     color: white;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #project-btn {
@@ -21,4 +21,32 @@ body {
     border-radius: 10px;
     background: #FFE2E2;
     padding: 10px 20px;
+}
+
+#nav-user-profile {
+    display: none;
+    height: 100%;
+    align-items: center;
+}
+
+#nav-user-img,
+#nav-user-name {
+    margin-right: 10px;
+}
+
+#nav-user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#nav-user-name {
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
 }
