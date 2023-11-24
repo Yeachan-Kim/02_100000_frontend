@@ -44,6 +44,7 @@ div {
     width: 100%;
     height: 600px;
     padding: 20px;
+    position: relative;
 }
 
 .post-description-container {
@@ -69,6 +70,7 @@ div {
     border: 1px solid #eee;
     box-shadow: 0 5px 10px 5px #eee;
     overflow: hidden;
+    position: relative;
 }
 
 .post-img-inner img {
@@ -105,6 +107,14 @@ div {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.profile-description {
+    margin-bottom: 20px;
+}
+
+.profile-description > h4 {
+    margin-bottom: 0;
 }
 
 .video-container {
