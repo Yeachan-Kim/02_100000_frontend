@@ -50,3 +50,7 @@ body {
     display: flex;
     align-items: center;
 }
+
+#project-btn {
+    display: none;
+}

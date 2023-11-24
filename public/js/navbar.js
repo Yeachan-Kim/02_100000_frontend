@@ -6,6 +6,7 @@ $("document").ready(function () {
         const navUserProfile = $("#nav-user-profile");
         const navUserImg = $("#nav-user-img");
         const navUserName = $("#nav-user-name");
+        const projectBtn = $("#project-btn");
 
         if (getCookie("RefreshToken")) {
             if (getCookie("AccessToken")) {
@@ -21,6 +22,10 @@ $("document").ready(function () {
                         navUserName.html(res.name);
                         singInBtn.css("display", "none");
                         navUserProfile.css("display", "flex");
+                        projectBtn.css("display", "inline-block");
+                        projectBtn.click(function (e) {
+                            location.href = "/post-modify.html"
+                        })
                         setCookie("Role", res.role, 60);
                     },
                     error: function (err) {
